@@ -39,9 +39,7 @@ public class Address {
     public String getZip() {
         return zip;
     }
-    @Override public String toString() {
-        StringBuilder result = new StringBuilder();
-        result.append(getStreet() + ", " + getCity() + ", " + getState() + " " + getZip());
-        return result.toString();
+    public String toString() {
+        return getStreet() + ", " + getCity() + ", " + getState() + " " + getZip();
     }
 }
